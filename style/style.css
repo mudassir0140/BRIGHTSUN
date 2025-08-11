@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.acount-btn {
+    font-size: 11px;
+}
+
+.custom-text {
+    color: #ac2125;
+}
+
+.section .header_div .modal .modal-header {
+    background: url(./../img/signIn-header.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* header nav */
+.section-navbar {
+    background: #ac2125;
+}
+
+.form-check-input:checked {
+    background-color: #ffc107 !important;
+    /* Green */
+    border-color: #080808 !important;
+    /* background-image: none; */
+
+}
+
+.section-navba {
+    height: 55px !important;
+}
+
+.name-laber {
+    font-size: 12px;
+}
+
+.nav {
+    background-color: #ac2126cc;
+}
+
+.nav li .nav-link {
+    color: white;
+
+}
+
+/* navbar drop down */
+
+.nav-link.active {
+
+    color: #952125 !important;
+}
+
+/* .nav-item:hover{
+    background-color: #f7a01b;
+} */
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.forgot-btn {
+    text-decoration: none;
+    color: #55b3c5;
+    font-size: 12px;
+}
+
+.custom-signup {
+    background-color: #ac2125 !important;
+}
+
+.custom-signup:hover {
+    background-color: #f7a01b !important;
+}
+
+.nav-tabs .nav-link-regisration {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0) !important;
+
+}
+
+.nav-tabs .nav-link-regisration.active {
+    background-color: #f7a01b;
+    color: white !important;
+
+}
+
+.forgot-btn:hover {
+    color: #267280;
+}
+
+.select1 {
+    width: 12%;
+}
+
+.section .tab-content .form i {
+    color: #952125;
+}
+
+.section .tab-content .form-2 .select-travel {
+    width: 19% !important;
+}
+
+.section .tab-content .form-2 .btn-div button:hover {
+    background-color: #ac2125;
+
+}
+
+.fade form button {
+    background-color: #f7a01b;
+}
+
+.btn-search {
+    width: 100%;
+    background-color: #f7a01b;
+
+}
+
+.btn-search:hover {
+    background-color: #952125;
+}
+
+.form-select {
+    font-size: 13px;
+}
+
+.nav-pills .nav-link.active {
+    background-color: white;
+    color: #952125;
+}
+
+.button-list ul {
+    background: hsl(358deg 68% 40% / 83%)
+}
+
+.brightsearchforminfoset {
+    top: -25px;
+}
+
+.input-group i {
+    color: #952125;
+}
+
+.txt-box-section .details-section label {
+    font-size: 13px;
+    color: gray;
+}
+
+.form-control:focus {
+    border-color: white;
+    box-shadow: 0 0 0 .25rem rgb(255, 255, 255) !important;
+}
+
+/* hotels */
+.details-section {
+    width: 33%;
+}
+
+.addvertisment {
+    width: 31% !important;
+    box-shadow: -1px 3px 7px rgba(0, 0, 0, 0.3);
+}
+.top-review .icons i{
+    background-color: #00b67a;
+    color: white; padding: 6px 6px;
+    font-size: 20px;
+}
+.top-review .trust{
+    color: #00b67a;
+    font-size: 25px;
+}
+.reivews .carousel .carousel-inner .carousel-item .icons-slide i{
+   background-color:#00b67a;
+   padding: 4px;
+   color: white;
+}
+@media(max-width: 500px) {
+    .container {
+        max-width: 90% !important;
+    }
+
+    .custom-text {
+        margin: 0 !important;
+    }
+
+    /* .toglerbtn{
+        margin-left: 0px;
+    } */
+    .addvertisment{
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 90% !important;
+    }
+
+    .custom-text {
+        font-size: 15px !important;
+    }
+
+    .select1 {
+        width: 50%;
+    }
+
+    .trustpilot-img {
+        display: none;
+    }
+
+    .section-navbar {
+        border-top: 2px solid #f7a01b;
+        border-bottom: 2px solid #f7a01b;
+        background-color: white;
+    }
+
+    .div-hostelss {
+        width: 98% !important;
+    }
+
+    .details-section {
+        width: 100%;
+
+    }
+
+    .details-section:nth-of-type(2) {
+        margin: 20px 0;
+    }
+
+    .flight-btn .btn-search {
+        width: 50%;
+    }
+    /* .addvertisment {
+        width: 30% !important;
+    } */
+    .addvertisment img {
+        width: 17%;
+    }
+    .addvertisment h5{
+        font-size: 14px !important;
+        
+    }
+}
