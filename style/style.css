@@ -177,8 +177,43 @@
 }
 .reivews .carousel .carousel-inner .carousel-item .icons-slide i{
    background-color:#00b67a;
-   padding: 4px;
+   padding: 2px;
    color: white;
+}
+.reivews .carousel .carousel-inner .carousel-item .icons-slide .Verified{
+    padding: 2px;
+    font-size: 15px;
+    color: #6c6c85;
+    background-color: transparent;
+
+}
+.slider-btns{
+    background-color: #6c6c85;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+
+.carousel-control-prev {
+    left: -50px; /* jitna bahar chahiye utna minus value do */
+}
+
+.carousel-control-next {
+    right: -50px;
+}
+
+.slider-btns {
+    background: white;
+    color: black;
+    font-size: 20px;
+    border-radius: 50%;
+}
+.slide-1{
+    width: 30%;
 }
 @media(max-width: 500px) {
     .container {
