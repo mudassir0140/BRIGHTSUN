@@ -65,6 +65,35 @@
     display: block;
 }
 
+.lastbtn {
+    position: relative;
+}
+
+.lastbtn .show,
+.lastbtn .hid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.lastbtn .hid {
+    display: none;
+}
+
+.lastbtn:hover button {
+    background-color: white;
+    color: #952125;
+}
+
+.lastbtn .show:hover {
+    display: none !important;
+}
+
+.lastbtn:hover .hid {
+    display: inline-block;
+}
+
 .forgot-btn {
     text-decoration: none;
     color: #55b3c5;
@@ -166,30 +195,37 @@
     width: 31% !important;
     box-shadow: -1px 3px 7px rgba(0, 0, 0, 0.3);
 }
-.top-review .icons i{
+
+.top-review .icons i {
     background-color: #00b67a;
-    color: white; padding: 6px 6px;
+    color: white;
+    padding: 6px 6px;
     font-size: 20px;
 }
-.top-review .trust{
+
+.top-review .trust {
     color: #00b67a;
     font-size: 25px;
 }
-.reivews .carousel .carousel-inner .carousel-item .icons-slide i{
-   background-color:#00b67a;
-   padding: 2px;
-   color: white;
+
+.reivews .carousel .carousel-inner .carousel-item .icons-slide i {
+    background-color: #00b67a;
+    padding: 2px;
+    color: white;
 }
-.reivews .carousel .carousel-inner .carousel-item .icons-slide .Verified{
+
+.reivews .carousel .carousel-inner .carousel-item .icons-slide .Verified {
     padding: 2px;
     font-size: 15px;
     color: #6c6c85;
     background-color: transparent;
 
 }
-.slider-btns{
+
+.slider-btns {
     background-color: #6c6c85;
 }
+
 .carousel-control-prev,
 .carousel-control-next {
     position: absolute;
@@ -199,7 +235,8 @@
 }
 
 .carousel-control-prev {
-    left: -50px; /* jitna bahar chahiye utna minus value do */
+    left: -50px;
+    /* jitna bahar chahiye utna minus value do */
 }
 
 .carousel-control-next {
@@ -212,9 +249,273 @@
     font-size: 20px;
     border-radius: 50%;
 }
-.slide-1{
+
+.slide-1 {
     width: 30%;
 }
+
+.cnt-aligninfiset {
+    position: relative;
+    display: inline-block;
+}
+
+.cnt-aligninfiset::after {
+    content: '';
+    background: url(../img/sprite.png) no-repeat;
+    background-position: 0 -332px;
+    width: 500px;
+    /* sprite ka actual width */
+    height: 26px;
+    /* sprite ka actual height */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -27px;
+}
+
+.city-slide {
+    width: 32.5%;
+}
+
+.left {
+    font-size: 25px;
+    margin-left: -73px;
+
+}
+
+.right {
+    margin-right: -73px;
+    font-size: 25px;
+}
+
+.right:hover {
+    background: #f7a01b !important;
+}
+
+.left:hover {
+    background: #f7a01b !important;
+}
+
+.city-slide {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    /* halka black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.city-slide:hover .overlay {
+    opacity: 1;
+    /* hover pe overlay dikh jaye */
+    height: 150px;
+    top: 30%;
+    width: 95%;
+    margin: 0 10px;
+}
+
+.hover-btn {
+    background: #f7a01b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background 0.3s ease;
+}
+
+.hover-btn:hover {
+    background: #d98717;
+    /* hover pe thoda dark */
+}
+
+.tours {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+h1 {
+    margin-top: -56px;
+}
+
+.tours img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Overlay div */
+.tours .div {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 23%);
+    
+    /* Start below */
+    transform: translateY(88%);
+    transition: transform 0.6s ease;
+}
+
+/* Hover effect */
+.tours:hover .div {
+    transform: translateY(0);
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+.seasion-txt span strong{
+    font-weight: 400;
+}
+.tours p {
+    margin: 25px 18px 0 18px;
+    font-size: 17px;
+    color: white;
+    z-index: 1;
+    position: absolute; /* so it sits over the image */
+   top: 0; /* adjust as needed */
+    left: 0;
+    right: 0;
+    transform: translateY(50%);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.tours:hover p {
+    transform: translateY(-10px); /* move up on hover */
+    opacity: 1; /* fade in */
+}
+
+.tours h1 {
+    font-size: 20px !important;
+    z-index: 1;
+    margin-left: 10px !important;
+    margin-top: -55px !important;
+    transform: translateY(50%);
+    transition: transform 0.4s ease;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    display: inline-block;
+    position: absolute;
+    margin-top: 390px;
+    margin: 0px;
+}
+
+.tours a {
+    position: absolute;
+    z-index: 1;
+    top: 88%;
+    right: 20px;
+    font-size: 15px;
+    color: rgb(255, 193, 7);
+    text-transform: uppercase;
+    font-weight: 700;
+    transform: translateY(20%);
+    opacity: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(255, 193, 7);
+    border-image: initial;
+    padding: 1px 10px;
+    transition: 0.35s;
+    text-decoration: none;
+}
+.tours a:hover{
+    color: white;
+    background-color: rgb(255, 193, 7) !important;
+    cursor: pointer; 
+}
+.tours:hover h1 {
+    /* margin-top: -50px; */
+
+   
+    transform: translateY(0);
+
+}
+.tours:hover a {
+    opacity: 1;
+}
+.seasion1{
+    position: relative;
+    overflow: hidden;
+}
+.seasion2{
+    position: relative;
+    overflow: hidden;
+}
+.seasion-hover{
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(0 0 0 / 23%); */
+    /* Start below */
+    transform: translateY(100%);
+    transition: transform 0.6s ease;
+
+}
+.seasion1:hover .seasion-hover{
+    transform: translateY(0);
+    background-color: #080808a1;
+
+}
+.seasion-hover2 p{
+    font-weight: 600 !important;
+    font-size: 15px !important;
+}
+.seasion-hover p{
+    font-weight: 600 !important;
+    font-size: 15px !important;
+}
+.seasion-hover a:hover{
+    background-color: #d98717;
+    border: #d98717 !important;
+    transition: transform 0.6s ease;
+
+}
+.seasion-hover2 a:hover{
+    background-color: #d98717;
+    border: #d98717 !important;
+    transition: transform 0.6s ease;
+
+}
+.seasion-hover2{
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(0 0 0 / 23%); */
+    /* Start below */
+    transform: translateY(-100%);
+    transition: transform 0.6s ease;
+
+}
+.seasion2:hover .seasion-hover2{
+    transform: translateY(0%);
+    background-color: #080808a1;
+
+}
+.seasion img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 @media(max-width: 500px) {
     .container {
         max-width: 90% !important;
@@ -227,8 +528,28 @@
     /* .toglerbtn{
         margin-left: 0px;
     } */
-    .addvertisment{
+    .addvertisment {
         width: 100% !important;
+    }
+
+    .reivews {
+        display: none;
+    }
+
+    .cnt-aligninfiset {
+        position: relative;
+        display: inline-block;
+    }
+
+    .cnt-aligninfiset::after {
+        content: '';
+        background-position: -108px -333px;
+        width: 248px;
+        height: 26px;
+        position: absolute;
+        transform: translateX(-46%);
+        top: -27px;
+
     }
 }
 
@@ -271,14 +592,16 @@
     .flight-btn .btn-search {
         width: 50%;
     }
+
     /* .addvertisment {
         width: 30% !important;
     } */
     .addvertisment img {
         width: 17%;
     }
-    .addvertisment h5{
+
+    .addvertisment h5 {
         font-size: 14px !important;
-        
+
     }
 }
